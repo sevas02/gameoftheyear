@@ -7,8 +7,8 @@ int main() {
 	enemy e;
 	kent k;
 	w.punch(e);
-	std::cout << "Íàíåñåíî ïğîòèâíèêó " << e.get_hp() << " ÕÏ" << std::endl;
+	std::cout << "ĞĞ°Ğ½ĞµÑĞµĞ½Ğ¾ Ğ¿Ñ€Ğ¾Ñ‚Ğ¸Ğ²Ğ½Ğ¸ĞºÑƒ " << e.get_hp() << " Ğ¥ĞŸ" << std::endl;
 	w.kent_heal(k);
-	std::cout << "Âîññòàíîâëåíî ñîşçíèêó " << k.get_hp() << " ÕÏ" << std::endl;
+	std::cout << "Ğ’Ğ¾ÑÑÑ‚Ğ°Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¾ ÑĞ¾ÑĞ·Ğ½Ğ¸ĞºÑƒ " << k.get_hp() << " Ğ¥ĞŸ" << std::endl;
 	return 0;
 }

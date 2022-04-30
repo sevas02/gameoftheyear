@@ -10,9 +10,9 @@ class wizard;
 class enemy {
 	friend class wizard;
 private:
-	int hp = 40; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
+	int hp = 40; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg; //РґР°РјР°Рі
+	double mana; //РјР°РЅР°
 public:
 	int get_hp() {
 		return hp;
@@ -22,9 +22,9 @@ public:
 class kent {
 	friend class wizard;
 private:
-	int hp = 1; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
+	int hp = 1; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg; //РґР°РјР°Рі
+	double mana; //РјР°РЅР°
 public:
 	int get_hp() {
 		return hp;
@@ -33,10 +33,10 @@ public:
 
 class wizard {
 private:
-	int hp = MAX_HP; //здоровье
-	int dmg = DMG; //дамаг
-	double mana = MAX_MANA; //мана
-	int heal_power = 10;//сколько маг может дать хилла
+	int hp = MAX_HP; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg = DMG; //РґР°РјР°Рі
+	double mana = MAX_MANA; //РјР°РЅР°
+	int heal_power = 10;//СЃРєРѕР»СЊРєРѕ РјР°Рі РјРѕР¶РµС‚ РґР°С‚СЊ С…РёР»Р»Р°
 public:
 	void punch(enemy &e);
 	void kent_heal(kent &k);
@@ -50,9 +50,9 @@ public:
 /*
 class Person {
 protected:
-	int hp; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
+	int hp; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg; //РґР°РјР°Рі
+	double mana; //РјР°РЅР°
 public:
 	int get_hp() {
 		return hp;
@@ -66,9 +66,9 @@ class enemy : Person {
 
 public:
 	enemy() {
-		hp = 40; //здоровье
-		dmg; //дамаг
-		mana; //мана
+		hp = 40; //Р·РґРѕСЂРѕРІСЊРµ
+		dmg; //РґР°РјР°Рі
+		mana; //РјР°РЅР°
 	}
 
 };
@@ -76,9 +76,9 @@ public:
 class kent {
 	friend class wizard;
 private:
-	int hp = 1; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
+	int hp = 1; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg; //РґР°РјР°Рі
+	double mana; //РјР°РЅР°
 public:
 	int get_hp() {
 		return hp;
@@ -87,10 +87,10 @@ public:
 
 class wizard {
 private:
-	int hp = MAX_HP; //здоровье
-	int dmg = DMG; //дамаг
-	double mana = MAX_MANA; //мана
-	int heal_power = 10;//сколько маг может дать хилла
+	int hp = MAX_HP; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg = DMG; //РґР°РјР°Рі
+	double mana = MAX_MANA; //РјР°РЅР°
+	int heal_power = 10;//СЃРєРѕР»СЊРєРѕ РјР°Рі РјРѕР¶РµС‚ РґР°С‚СЊ С…РёР»Р»Р°
 public:
 	void punch(enemy &e);
 	void kent_heal(kent &k);
