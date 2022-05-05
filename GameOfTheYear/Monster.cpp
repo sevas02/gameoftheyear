@@ -1,6 +1,5 @@
-#include "Monster.h"
+﻿#include "Monster.h"
 
-void monster::punch(enemy& e) {
+void monster::punch(hero& e) {
 	e.hp -= dmg;
-	mana += dmg * 0.3;
 }

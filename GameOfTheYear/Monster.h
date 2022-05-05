@@ -1,30 +1,17 @@
-#ifndef WIZARD
-#define WIZARD
+п»ї#ifndef MONSTER
+#define MONSTER
 
-#define MAX_HP 150
-#define MAX_MANA 150
-#define DMG 30
+#define MAX_HP 500
+#define DMG 20
 
 class monster;
 
-class enemy {
+class hero {
 	friend class monster;
 private:
-	int hp = 40; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
-public:
-	int get_hp() {
-		return hp;
-	}
-};
-
-class kent {
-	friend class monster;
-private:
-	int hp = 1; //здоровье
-	int dmg; //дамаг
-	double mana; //мана
+	int hp = 40; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg; //РґР°РјР°Рі
+	double mana; //РјР°РЅР°
 public:
 	int get_hp() {
 		return hp;
@@ -33,13 +20,10 @@ public:
 
 class monster {
 private:
-	int hp = MAX_HP; //здоровье
-	int dmg = DMG; //дамаг
-	double mana = MAX_MANA; //мана
-	int heal_power = 10;//сколько маг может дать хилла
+	int hp = MAX_HP; //Р·РґРѕСЂРѕРІСЊРµ
+	int dmg = DMG; //РґР°РјР°Рі
 public:
-	void punch(enemy& e);
-
+	void punch(hero& e);
 };
 
 
